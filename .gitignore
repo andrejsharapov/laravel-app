@@ -100,6 +100,7 @@ sftp.*
 # Lock files
 **lock*
 
+# Laravel files
 /public/hot
 /public/storage
 /storage/*.key
