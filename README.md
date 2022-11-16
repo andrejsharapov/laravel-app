@@ -127,3 +127,12 @@ More info to [phpDocumentor](https://manual.phpdoc.org/HTMLSmartyConverter/HandS
     - SQLTools PostgreSQL
     - Comment Anchors
 - PhpStorm
+
+<!--  Create migration
+      php artisan make:model NameModel -m
+      (output in app/) migration (created in database/migrations)
+
+      Create seed
+      php artisan make:seeder NameSeeder
+      
+-->
