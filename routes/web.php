@@ -14,5 +14,16 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+  return view('pages/welcome');
 });
+
+// for static page
+//Route::get('/test', function () {
+//  $newVar = 'Hello world!';
+//  return view('test', compact('newVar'));
+//});
+
+// using controllers
+//Route::get('/projects', function () {
+//  return view('pages/projects', ['ProjectsController@getContent']);
+//});

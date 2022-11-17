@@ -3,7 +3,7 @@ $menuItems = require __DIR__ . '../../../../database_/appbar.php';
 ?>
 
 <nav
-  class="sticky bottom-0 md:px-4 py-2 md:py-0 bg-gradient-to-r from-indigo-600 to-purple-600 dark:from-purple-800 dark:to-indigo-800 shadow-lg">
+  class="sticky top-0 md:px-4 py-2 md:py-0 bg-gradient-to-r from-indigo-600 to-purple-600 dark:from-purple-800 dark:to-indigo-800 shadow-lg">
   <div class="md:container flex flex-wrap justify-between items-center mx-auto">
     <!-- Logo or Content -->
     <div class="flex items-center ml-4">
