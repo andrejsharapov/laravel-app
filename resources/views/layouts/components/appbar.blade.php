@@ -3,11 +3,11 @@ $menuItems = require __DIR__ . '../../../../database_/appbar.php';
 ?>
 
 <nav
-  class="sticky bottom-0 md:px-4 py-2 md:py-0 bg-gradient-to-r from-indigo-200 to-purple-200 dark:from-purple-800 dark:to-indigo-800 shadow-lg">
+  class="sticky bottom-0 md:px-4 py-2 md:py-0 bg-gradient-to-r from-indigo-600 to-purple-600 dark:from-purple-800 dark:to-indigo-800 shadow-lg">
   <div class="md:container flex flex-wrap justify-between items-center mx-auto">
     <!-- Logo or Content -->
     <div class="flex items-center ml-4">
-      <span class="self-center text-lg font-medium whitespace-nowrap dark:text-white">
+      <span class="self-center text-lg font-medium whitespace-nowrap text-white">
           {{ config('app_config.date.current_month') }}, {{ config('app_config.date.current_day') }} {{ config('app_config.date.current_year') }}
       </span>
     </div>
@@ -35,12 +35,12 @@ $menuItems = require __DIR__ . '../../../../database_/appbar.php';
         foreach ($menuItems as $i => $step1) {
           if (is_array($step1['path'])) {
             echo '<div class="w-full">';
-            echo "<button id='$step1[label]' data-dropdown-toggle='dropdown-$i' class='w-full flex justify-between items-center whitespace-nowrap block whitespace-nowrap py-3 px-4 dark:text-white hover:bg-indigo-300 hover:bg-opacity-40'>";
+            echo "<button id='$step1[label]' data-dropdown-toggle='dropdown-$i' class='w-full flex justify-between items-center whitespace-nowrap block whitespace-nowrap py-3 px-4 text-white hover:bg-indigo-300 hover:bg-opacity-40'>";
             echo $step1['label'];
             echo '<svg width="20" height="20" viewBox="0 0 24 24" class="ml-2"><path fill="currentColor" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>';
             echo '</button>';
-            echo "<div id='dropdown-$i' aria-labelledby='$step1[label]' class='mt-1 hidden z-10 min-w-min font-normal rounded divide-y divide-gray-300 shadow bg-indigo-200 dark:bg-indigo-800'>";
-            echo '<div class="py-1 text-sm text-gray-700 dark:text-gray-400 divide-y divide-gray-300" aria-labelledby="dropdownLargeButton">';
+            echo "<div id='dropdown-$i' aria-labelledby='$step1[label]' class='mt-1 hidden z-10 min-w-min font-normal rounded divide-y divide-gray-300 shadow bg-purple-600 dark:bg-indigo-800'>";
+            echo '<div class="py-1 text-sm text-white divide-y divide-gray-300" aria-labelledby="dropdownLargeButton">';
 
             foreach ($step1['path'] as $step2 => $key) {
               echo "<a href='$key[path]'";
@@ -49,7 +49,7 @@ $menuItems = require __DIR__ . '../../../../database_/appbar.php';
                 echo "target='_blank'";
               };
 
-              echo "rel='noopener noreferrer' class='first-letter:uppercase block whitespace-nowrap py-3 px-4 dark:text-white hover:bg-indigo-300 hover:bg-opacity-40' aria-current='page'>";
+              echo "rel='noopener noreferrer' class='first-letter:uppercase block whitespace-nowrap py-3 px-4 text-white hover:bg-purple-400 hover:bg-opacity-40' aria-current='page'>";
               echo $key['label'];
               echo '</a>';
             }
@@ -64,7 +64,7 @@ $menuItems = require __DIR__ . '../../../../database_/appbar.php';
               echo "target='_blank'";
             };
 
-            echo "rel='noopener noreferrer' class='first-letter:uppercase whitespace-nowrap block whitespace-nowrap py-3 px-4 dark:text-white hover:bg-indigo-300 hover:bg-opacity-40' aria-current='page'>
+            echo "rel='noopener noreferrer' class='first-letter:uppercase whitespace-nowrap block whitespace-nowrap py-3 px-4 text-white hover:bg-purple-300 hover:bg-opacity-40' aria-current='page'>
                     $step1[label]
                   </a>";
             echo '</div>';
