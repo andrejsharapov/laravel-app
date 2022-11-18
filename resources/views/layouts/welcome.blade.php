@@ -23,21 +23,13 @@
 
 <body class="min-h-screen flex flex-col bg-white dark:bg-gray-900 text-slate-900 dark:text-white dark:text-slate-300">
 
-@yield('appbar')
+@include('layouts/components/appbar')
 
 <div class="grow my-6 md:container md:mx-auto px-4 flex justify-center items-center">
-  @yield('content')
+  @include ('layouts.content')
 </div>
 
-<div class="bg-white border-t dark:bg-slate-800 ring-1 ring-slate-900/5 dark:border-t-gray-600">
-  <div class="md:container md:mx-auto px-4 md:px-0">
-    <div class="py-2 px-4 text-md text-center">
-      &copy; {{ config('app_config.date.current_year') }}
-    </div>
-  </div>
-</div>
-
-<script src="https://unpkg.com/flowbite@1.5.2/dist/flowbite.js"></script>
+@include('layouts/footer')
 
 @yield('scripts')
 
