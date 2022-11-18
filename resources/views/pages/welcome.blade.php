@@ -1,4 +1,4 @@
-@extends('layouts.welcome')
+@extends('layouts.welcome.index')
 
 @section('meta.title', 'Welcome page')
 
