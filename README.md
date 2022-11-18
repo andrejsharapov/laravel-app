@@ -2,19 +2,29 @@
 
 Backend Learning
 
-- [Backend Learning](#backend-learning)
+![php -v](https://img.shields.io/badge/php_7.3-7377ad)
+![laravel -v](https://img.shields.io/badge/laravel-9.x-df5b4b)
+
+## Table of Contents
+
+- [Laravel App](#laravel-app)
+    - [Table of Contents](#table-of-contents)
     - [List of topics](#list-of-topics)
     - [Commit messages](#commit-messages)
         - [Examples](#examples)
     - [Comments](#comments)
     - [Software](#software)
+    - [Command helper](#command-helper)
+        - [Create controller](#create-controller)
+        - [Create model + migration](#create-model--migration)
+        - [Create seed](#create-seed)
 
 ## List of topics
 
 - [x] PHP base
 - [x] SQL (MySQL, PostgreSQL, DBeaver)
 - [x] Linux base
-- [ ] ООП
+- [x] ООП
 - [ ] MVC (Model-View-Controller)
 - [ ] DB
 - [ ] PHP advanced
@@ -116,23 +126,54 @@ More info to [phpDocumentor](https://manual.phpdoc.org/HTMLSmartyConverter/HandS
 
 ## Software
 
-- PHP > 7.3 | 8.1
 - OpenServer
 - MySQL
 - PostgreSQL
 - DBeaver
+- PhpStorm
+
+<!--
 - Visual Studio Code
     - SQLTools
     - SQL Formatter
     - SQLTools PostgreSQL
     - Comment Anchors
-- PhpStorm
-
-<!--  Create migration
-      php artisan make:model NameModel -m
-      (output in app/) migration (created in database/migrations)
-
-      Create seed
-      php artisan make:seeder NameSeeder
-      
 -->
+
+## Command helper
+
+<details>
+<summary>Commands</summary>
+
+```bash
+# -> show commands:
+$ php artisan
+```
+
+### Create controller
+
+```bash
+$ php artisan make:controller NameController
+# output in app/Http/Controllers
+```
+
+### Create model + migration
+
+```bash
+$ php artisan make:model NameModel -m
+# output:
+#   model     in app/Models/
+#   migration in database/migrations/
+```
+
+### Create seed
+
+```bash
+php artisan make:seeder NameSeeder
+```
+
+</details>
+
+<p align="center">
+<a href="#laravel-app" title="">To top</a>
+</p>
