@@ -11,16 +11,12 @@
   </style>
 @endsection
 
-@section('appbar')
-  @extends('layouts/components/appbar')
-@endsection
-
 @section('content')
   <h1 class="md:text-5xl">
     {{ config('app_config.app.app_name') }}
   </h1>
 @endsection
 
-@section('styles')
+@section('scripts')
   <!-- Some javascript -->
 @endsection

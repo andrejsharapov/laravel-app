@@ -1,6 +1,6 @@
 @extends('layouts.welcome')
 
-@section('meta.title', 'My projects')
+@section('meta.title', 'Welcome page')
 
 @section('styles')
     <!-- Some styles -->
@@ -11,16 +11,12 @@
     </style>
 @endsection
 
-@section('appbar')
-    @extends('layouts/components/appbar')
-@endsection
-
 @section('content')
     <h1 class="md:text-5xl">
-        projects
+        {{ config('app_config.app.app_desc') }}
     </h1>
 @endsection
 
-@section('styles')
+@section('scripts')
     <!-- Some javascript -->
 @endsection
