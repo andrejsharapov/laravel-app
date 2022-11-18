@@ -164,6 +164,7 @@ $ php artisan make:model NameModel -m
 # output:
 #   model     in app/Models/
 #   migration in database/migrations/
+$ php artisan migrate
 ```
 
 ### Create seed
