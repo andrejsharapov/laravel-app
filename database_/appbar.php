@@ -12,18 +12,29 @@ return [
                 'label' => 'Projects',
                 'path' => '/projects',
                 'blank' => false,
-            ],
-//            [
+//            ], [
 //                'label' => '',
 //                'path' => '#',
 //                'blank' => true,
-//            ]
+            ]
         ]
-    ],
-    [
-        'label' => 'PHP docs',
-        'path' => 'https://www.php.net/manual/ru/language.basic-syntax.phpmode.php',
-        'blank' => true,
+    ], [
+        'label' => 'Modules',
+        'path' => '/modules',
+        'blank' => false,
+    ], [
+        'label' => 'Practices',
+        'path' => [
+            [
+                'label' => 'Oop (23.10)',
+                'path' => '#',
+                'blank' => true,
+            ], [
+                'label' => 'SPA (14.8)',
+                'path' => '#',
+                'blank' => true,
+            ]
+        ]
     ], [
         'label' => 'Resources',
         'path' => [
@@ -35,6 +46,10 @@ return [
                 //   'label' => '',
                 //   'path' => '#',
                 //   'blank' => true,
+            ], [
+                'label' => 'PHP docs',
+                'path' => 'https://www.php.net/manual/ru/language.basic-syntax.phpmode.php',
+                'blank' => true,
             ],
         ],
     ], [
