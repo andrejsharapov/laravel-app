@@ -2,8 +2,8 @@
 
 Backend Learning
 
-![php -v](https://img.shields.io/badge/php_7.3-7377ad)
-![laravel -v](https://img.shields.io/badge/laravel-7-df5b4b) <!-- 7.30.6 -->
+![php -v](https://img.shields.io/badge/php_7.4-7377ad)
+![laravel -v](https://img.shields.io/badge/laravel-8-df5b4b)
 
 ## Table of Contents
 
