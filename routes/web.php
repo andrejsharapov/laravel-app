@@ -23,7 +23,10 @@ Route::get('/', function () {
 //  return view('test', compact('newVar'));
 //});
 
-// using controllers
 //Route::get('/projects', function () {
-//  return view('pages/projects', ['ProjectsController@getContent']);
+//    return view('pages/projects');
 //});
+
+// using controller
+Route::get('/projects', 'ProjectsController@getContent');
+
