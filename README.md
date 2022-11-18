@@ -3,21 +3,21 @@
 Backend Learning
 
 ![php -v](https://img.shields.io/badge/php_7.3-7377ad)
-![laravel -v](https://img.shields.io/badge/laravel-9.x-df5b4b)
+![laravel -v](https://img.shields.io/badge/laravel-7-df5b4b) <!-- 7.30.6 -->
 
 ## Table of Contents
 
 - [Laravel App](#laravel-app)
-    - [Table of Contents](#table-of-contents)
-    - [List of topics](#list-of-topics)
-    - [Commit messages](#commit-messages)
-        - [Examples](#examples)
-    - [Comments](#comments)
-    - [Software](#software)
-    - [Command helper](#command-helper)
-        - [Create controller](#create-controller)
-        - [Create model + migration](#create-model--migration)
-        - [Create seed](#create-seed)
+  - [Table of Contents](#table-of-contents)
+  - [List of topics](#list-of-topics)
+  - [Commit messages](#commit-messages)
+    - [Examples](#examples)
+  - [Comments](#comments)
+  - [Software](#software)
+  - [Command helper](#command-helper)
+    - [Create controller](#create-controller)
+    - [Create model + migration](#create-model--migration)
+    - [Create seed](#create-seed)
 
 ## List of topics
 
@@ -35,7 +35,9 @@ Backend Learning
 
 ## Commit messages
 
-> This is adapted from [Angular's commit convention](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-angular).
+> This is adapted
+> from [Angular's commit convention](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-angular)
+> .
 
 Messages must be matched by the following regex:
 
@@ -122,7 +124,9 @@ Messages must be matched by the following regex:
 ?>
 ```
 
-More info to [phpDocumentor](https://manual.phpdoc.org/HTMLSmartyConverter/HandS/phpDocumentor/tutorial_phpDocumentor.quickstart.pkg.html) | [Example](https://manual.phpdoc.org/HTMLSmartyConverter/HandS/phpDocumentor/tutorial_sample2.pkg.html).
+More info
+to [phpDocumentor](https://manual.phpdoc.org/HTMLSmartyConverter/HandS/phpDocumentor/tutorial_phpDocumentor.quickstart.pkg.html)
+| [Example](https://manual.phpdoc.org/HTMLSmartyConverter/HandS/phpDocumentor/tutorial_sample2.pkg.html).
 
 ## Software
 
