@@ -6,7 +6,7 @@
 
 @hasSection('module')
   <div class="grid md:flex w-full h-full">
-    <aside class="flex flex-col w-full md:w-1/3 md:min-w-32 bg-gray-200 dark:bg-gray-800 shadow-xl">
+    <aside class="flex flex-col w-full md:max-w-xs bg-gray-200 dark:bg-gray-800 shadow-xl">
       <div class="grow h-full p-4 relative">
         @include('layouts.components.sidebar')
       </div>
