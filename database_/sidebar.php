@@ -10,20 +10,25 @@ return [
     'label' => 'Modules',
     'path' => [
       [
-        'label' => '1',
-        'path' => '#',
+        'label' => '11',
+        'path' => 'modules?utm=11',
         'icon' => '',
         'blank' => false,
       ], [
-        'label' => '3',
-        'path' => '#',
+        'label' => '12',
+        'path' => 'modules?utm=12',
         'icon' => 'bi bi-wind',
-        'blank' => true,
+        'blank' => false,
       ], [
-        'label' => '2',
-        'path' => '#',
+        'label' => '13',
+        'path' => 'modules?utm=13',
         'icon' => '',
-        'blank' => true,
+        'blank' => false,
+      ], [
+        'label' => '14',
+        'path' => 'modules?utm=14',
+        'icon' => '',
+        'blank' => false,
 //         ], [
 //        'label' => 'test',
 //        'path' => '#',
