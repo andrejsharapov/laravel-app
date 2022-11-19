@@ -90,10 +90,6 @@ sw.*
 !.vscode/extensions.json
 !.vscode/settings.json
 
-# Tests
-__tests__/
-test_*
-
 # SFTP
 sftp.*
 
@@ -106,5 +102,18 @@ sftp.*
 /storage/*.key
 /vendor
 .phpunit.result.cache
+
+# Vagrant ignored files
 Homestead.json
 Homestead.yaml
+
+# Default ignored files
+/shelf/
+/workspace.xml
+
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+
+# Editor-based HTTP Client requests
+/httpRequests/
