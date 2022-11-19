@@ -1,17 +1,21 @@
 @php
-$menuItems = require __DIR__ . '../../../../database_/sidebar.php';
+  $menuItems = require __DIR__ . '../../../../database_/sidebar.php';
 @endphp
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"/>
 
 <div
-  class="app__sidebar absolute top-0 left-0 bottom-0 p-2 w-full overflow-y-auto text-gray-700 dark:text-white"
+  class="w-full h-full overflow-y-auto text-gray-700 dark:text-white"
 >
   {{-- title/logo --}}
-  <div class="p-2.5 flex items-center">
-      <a class="text-white text-4xl top-4 left-4 cursor-pointer" href="/modules" title="Modules">
-        <i class="bi bi-menu-button px-2 bg-red-600 rounded-md"></i>
-      </a>
+  <div class="flex items-center">
+    <a
+      href="/modules"
+      title="Modules"
+      class="text-white text-3xl w-12 h-12 bg-red-600 rounded-md grid place-content-center"
+    >
+      <i class="bi bi-menu-button"></i>
+    </a>
     <span class="ml-4 font-bold text-2xl uppercase">
       {{ config('app_config.app.app_name') }}
       </span>
