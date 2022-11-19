@@ -1,6 +1,6 @@
-<?php
+@php
 $menuItems = require __DIR__ . '../../../../database_/sidebar.php';
-?>
+@endphp
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"/>
 
@@ -48,8 +48,8 @@ $menuItems = require __DIR__ . '../../../../database_/sidebar.php';
             <div class="py-1 text-sm divide-y divide-gray-300 dark:divide-gray-600">
               @foreach ($step1['path'] as $step2 => $key)
                 <a
-                  href="{{$key['path']}}"
-                  target="{{$key['blank'] ? '_blank' : ''}}"
+                  href="{{ $key['path'] }}"
+                  target="{{ $key['blank'] ? '_blank' : '' }}"
                   rel='noopener noreferrer'
                   class='first-letter:uppercase block whitespace-nowrap py-3 px-4 rounded-md font-bold hover:text-white hover:bg-red-600'
                   aria-current='page'

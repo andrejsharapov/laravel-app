@@ -1,8 +1,6 @@
 @extends('layouts.pages.index')
 
-<?php
-$title = 'This is the layout for the pages';
-?>
+@php($title = 'This is the layout for the pages')
 
 @section('meta.title', $title)
 
