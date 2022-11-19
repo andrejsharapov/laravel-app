@@ -90,10 +90,6 @@ sw.*
 !.vscode/extensions.json
 !.vscode/settings.json
 
-# Tests
-tests/
-test_*
-
 # SFTP
 sftp.*
 
