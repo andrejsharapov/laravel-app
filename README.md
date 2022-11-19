@@ -51,11 +51,11 @@ Messages must be matched by the following regex:
   <summary>Explanation</summary>
 
 |          On/Off          | Message   | Description                                                   |
-| :----------------------: | --------- | :------------------------------------------------------------ |
+|:------------------------:|-----------|:--------------------------------------------------------------|
 | <ul><li>- [ ] </li></ul> | build     | Changes that affect the build system or external dependencies |
 | <ul><li>- [x] </li></ul> | chore     | Chore development                                             |
 | <ul><li>- [x] </li></ul> | ci        | Changes to our CI configuration files and scripts             |
-| <ul><li>- [ ] </li></ul> | deps      | Dependencies                                                  |
+| <ul><li>- [x] </li></ul> | deps      | Dependencies                                                  |
 | <ul><li>- [x] </li></ul> | docs      | Documentation only changes                                    |
 | <ul><li>- [x] </li></ul> | feat      | A new feature                                                 |
 | <ul><li>- [x] </li></ul> | fix       | A bug fix                                                     |
@@ -95,8 +95,6 @@ Messages must be matched by the following regex:
 ## Comments
 
 ```php
-<?php
-
 //======================================================================
 // CATEGORY LARGE FONT
 //======================================================================
@@ -111,6 +109,10 @@ Messages must be matched by the following regex:
 # Option 2
 # Option 3
 
+// This is a single line quote.
+```
+
+```js
 /**
  * This is a detailed explanation
  * of something that should require
@@ -121,9 +123,6 @@ Messages must be matched by the following regex:
  *
  * @return array | string | boolean
  */
-
-// This is a single line quote.
-?>
 ```
 
 More info
