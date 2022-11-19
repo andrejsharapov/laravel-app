@@ -147,38 +147,7 @@ to [phpDocumentor](https://manual.phpdoc.org/HTMLSmartyConverter/HandS/phpDocume
 
 ## Command helper
 
-<details>
-<summary>Commands</summary>
-
-```bash
-# -> show commands:
-$ php artisan
-```
-
-### Create controller
-
-```bash
-$ php artisan make:controller NameController
-# output in app/Http/Controllers
-```
-
-### Create model + migration
-
-```bash
-$ php artisan make:model NameModel -m
-# output:
-#   model     in app/Models/
-#   migration in database/migrations/
-$ php artisan migrate
-```
-
-### Create seed
-
-```bash
-php artisan make:seeder NameSeeder
-```
-
-</details>
+Read more [here](https://github.com/andrejsharapov/laravel-app/tree/master/notes).
 
 <p align="center">
 <a href="#laravel-app" title="">To top</a>

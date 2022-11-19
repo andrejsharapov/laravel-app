@@ -1,6 +1,6 @@
 @extends('layouts.modules.index')
 
-@section('meta.title', 'Module')
+@section('meta.title', $title)
 
 @section('styles')
   <!-- Some styles -->
