@@ -7,8 +7,8 @@
 @hasSection('module')
   <div class="grid md:flex w-full h-full bg-gray-200">
     <aside class="flex flex-col w-full md:w-1/3 md:min-w-32 shadow-xl">
-      <div class="grow h-full p-4 ">
-        {{--      @include('layouts.components.sidebar')--}}
+      <div class="grow h-full p-4 relative">
+        @include('layouts.components.sidebar')
       </div>
       @include('layouts.footer')
     </aside>

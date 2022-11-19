@@ -8,7 +8,9 @@ $menuItems = require __DIR__ . '../../../../database_/appbar.php';
     <!-- Logo or Content -->
     <div class="flex items-center ml-4">
       <span class="self-center text-lg font-medium whitespace-nowrap text-white">
-          {{ config('app_config.date.current_month') }}, {{ config('app_config.date.current_day') }} {{ config('app_config.date.current_year') }}
+        <a href="/" title="{{ config('app_config.app.app_name') }}" class="uppercase font-bold">
+          {{ config('app_config.app.app_name') }}
+        </a>
       </span>
     </div>
     <!-- /Logo or Content -->

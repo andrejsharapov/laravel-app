@@ -1,64 +1,72 @@
 <?php
 
 return [
-    [
-        'label' => config('app_config.app.app_name'),
-        'path' => '/',
-        'blank' => false,
-    ], [
-        'label' => 'Pages',
-        'path' => [
-            [
-                'label' => 'Projects',
-                'path' => '/projects',
-                'blank' => false,
-//            ], [
-//                'label' => '',
-//                'path' => '#',
-//                'blank' => true,
-            ]
-        ]
-    ], [
-        'label' => 'Modules',
-        'path' => '/modules',
-        'blank' => false,
-    ], [
-        'label' => 'Practices',
-        'path' => [
-            [
-                'label' => 'Oop (23.10)',
-                'path' => '#',
-                'blank' => true,
-            ], [
-                'label' => 'SPA (14.8)',
-                'path' => '#',
-                'blank' => true,
-            ]
-        ]
-    ], [
-        'label' => 'Resources',
-        'path' => [
-            [
-                'label' => 'Tailwind CSS',
-                'path' => 'https://tailwindcss.com',
-                'blank' => true,
-                // ], [
-                //   'label' => '',
-                //   'path' => '#',
-                //   'blank' => true,
-            ], [
-                'label' => 'PHP docs',
-                'path' => 'https://www.php.net/manual/ru/language.basic-syntax.phpmode.php',
-                'blank' => true,
-            ],
-        ],
-    ], [
-        'label' => 'GitHub',
-        'path' => 'https://github.com/andrejsharapov/sf-php',
+  [
+    'label' => 'Modules',
+    'path' => '/modules',
+    'blank' => false,
+  ], [
+    'label' => 'Practices',
+    'path' => [
+      [
+//        'label' => 'Oop (23.10)',
+//        'path' => '#',
+//        'blank' => true,
+//      ], [
+        'label' => 'SPA (14.8)',
+        'path' => '#',
         'blank' => true,
         // ], [
         //   'label' => 'test',
         //   'path' => '#',
         //   'blank' => true,
+      ]
+    ]
+  ], [
+    'label' => 'Layouts',
+    'path' => [
+      [
+        'label' => 'Home page',
+        'path' => '/',
+        'blank' => true,
+      ], [
+        'label' => 'Pages',
+        'path' => '/page',
+        'blank' => true,
+      ], [
+        'label' => 'Modules',
+        'path' => '/modules',
+        'blank' => true,
+//          ], [
+//        'label' => 'test',
+//        'path' => '#',
+//        'blank' => true,
+      ]
+    ]
+  ], [
+    'label' => 'Resources',
+    'path' => [
+      [
+        'label' => 'Tailwind CSS',
+        'path' => config('app_config.links.tailwindcss'),
+        'blank' => true,
+        // ], [
+        //   'label' => '',
+        //   'path' => '#',
+        //   'blank' => true,
+      ], [
+        'label' => 'PHP docs',
+        'path' => config('app_config.links.php'),
+        'blank' => true,
+//         ], [
+//        'label' => 'test',
+//        'path' => '#',
+//        'blank' => true,
+      ],
     ],
+  ], [
+    'label' => 'GitHub',
+    'path' => config('app_config.links.tailwindcss'),
+    'blank' => true,
+  ],
 ];
