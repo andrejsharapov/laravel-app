@@ -1,6 +1,10 @@
 @extends('layouts.pages.index')
 
-@section('meta.title', 'Page name')
+<?php
+$title = 'This is the layout for the pages';
+?>
+
+@section('meta.title', $title)
 
 @section('styles')
   <!-- Some styles -->
@@ -13,7 +17,7 @@
 
 @section('content')
   <h1 class="md:text-5xl">
-    {{ config('app_config.app.app_desc') }}
+    {{ $title }}
   </h1>
 @endsection
 

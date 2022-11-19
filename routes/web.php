@@ -8,5 +8,5 @@ Route::get('/', function () {
 
 // using controller
 Route::get('/modules', 'ModulesController@getContent');
-Route::get('/projects', 'PagesController@getContent');
+Route::get('/page', 'PagesController@getContent');
 
