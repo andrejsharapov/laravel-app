@@ -2,10 +2,10 @@
   $menuItems = require __DIR__ . '../../../../database_/sidebar.php';
 @endphp
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css" />
 
 <div
-  class="w-full h-full overflow-y-auto text-gray-700 dark:text-white"
+  class="w-full h-full overflow-x-hidden overflow-y-auto text-gray-700 dark:text-white"
 >
   {{-- title/logo --}}
   <div class="flex items-center">
@@ -55,8 +55,9 @@
                   href="{{ $key['path'] }}"
                   target="{{ $key['blank'] ? '_blank' : '' }}"
                   rel='noopener noreferrer'
-                  class='first-letter:uppercase block whitespace-nowrap py-3 px-4 rounded-md font-bold hover:text-white hover:bg-red-600'
-                  aria-current='page'
+                  class='truncate first-letter:uppercase block whitespace-nowrap py-3 px-4 rounded-md font-bold hover:text-white hover:bg-red-600'
+                  aria-current="page"
+                  title="{{ $key['label'] }}"
                 >
                   {{--                  <i class="{{ $key['icon'] }}"></i>--}}
                   <span class="ml-4"> {{ $key['label'] }} </span>
@@ -72,9 +73,9 @@
           href="{{ $step1['path'] }}"
           target="{{ $step1['blank'] ? '_blank' : '' }}"
           rel="noopener noreferrer"
-          title=""
           class="first-letter:uppercase whitespace-nowrap p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 font-bold hover:text-white hover:bg-red-600"
           aria-current="page"
+          title="{{ $step1['label'] }}"
         >
           <i class="{{ $step1['icon'] }}"></i>
 
