@@ -5,15 +5,15 @@
 @endif
 
 @hasSection('module')
-  <div class="grid md:flex w-full h-full bg-gray-200">
-    <aside class="flex flex-col w-full md:w-1/3 md:min-w-32 shadow-xl">
+  <div class="grid md:flex w-full h-full">
+    <aside class="flex flex-col w-full md:w-1/3 md:min-w-32 bg-gray-200 dark:bg-gray-800 shadow-xl">
       <div class="grow h-full p-4 relative">
         @include('layouts.components.sidebar')
       </div>
       @include('layouts.footer')
     </aside>
 
-    <main class="shadow-lg grow min-h-screen p-4 bg-gray-50">
+    <main class="shadow-lg grow min-h-screen p-4">
       <h1 class="mb-2 text-2xl md:text-4xl text-gray-900 dark:text-white">
         @yield('title')
       </h1>

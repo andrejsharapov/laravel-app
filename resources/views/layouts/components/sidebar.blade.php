@@ -5,7 +5,7 @@ $menuItems = require __DIR__ . '../../../../database_/sidebar.php';
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"/>
 
 <div
-  class="app__sidebar absolute top-0 left-0 bottom-0 p-2 w-full overflow-y-auto text-gray-700 dark:bg-gray-700 dark:text-white"
+  class="app__sidebar absolute top-0 left-0 bottom-0 p-2 w-full overflow-y-auto text-gray-700 dark:text-white"
 >
   {{-- title/logo --}}
   <div class="p-2.5 flex items-center">
@@ -27,7 +27,7 @@ $menuItems = require __DIR__ . '../../../../database_/sidebar.php';
           aria-controls="dropdown-{{ $i }}"
           data-collapse-toggle="dropdown-{{ $i }}"
           type="button"
-          class="first-letter:uppercase whitespace-nowrap p-2.5 flex items-center justify-between rounded-md px-4 duration-300 cursor-pointer hover:bg-gray-300 font-bold w-full dark:hover:bg-gray-800"
+          class="first-letter:uppercase whitespace-nowrap p-2.5 flex items-center justify-between rounded-md px-4 duration-300 cursor-pointer hover:text-white hover:bg-red-600 font-bold w-full"
         >
           {{-- data-dropdown-toggle="dropdown-{{ $i }}" --}}
           <span class="flex items-center">
@@ -51,7 +51,7 @@ $menuItems = require __DIR__ . '../../../../database_/sidebar.php';
                   href="{{$key['path']}}"
                   target="{{$key['blank'] ? '_blank' : ''}}"
                   rel='noopener noreferrer'
-                  class='first-letter:uppercase block whitespace-nowrap py-3 px-4 rounded-md font-bold hover:bg-gray-300 dark:hover:bg-gray-800'
+                  class='first-letter:uppercase block whitespace-nowrap py-3 px-4 rounded-md font-bold hover:text-white hover:bg-red-600'
                   aria-current='page'
                 >
                   {{--                  <i class="{{ $key['icon'] }}"></i>--}}
@@ -68,7 +68,8 @@ $menuItems = require __DIR__ . '../../../../database_/sidebar.php';
           href="{{ $step1['path'] }}"
           target="{{ $step1['blank'] ? '_blank' : '' }}"
           rel="noopener noreferrer"
-          class="first-letter:uppercase whitespace-nowrap p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 font-bold hover:bg-gray-300 dark:hover:bg-gray-800"
+          title=""
+          class="first-letter:uppercase whitespace-nowrap p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 font-bold hover:text-white hover:bg-red-600"
           aria-current="page"
         >
           <i class="{{ $step1['icon'] }}"></i>

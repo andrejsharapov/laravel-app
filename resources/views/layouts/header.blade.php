@@ -21,4 +21,4 @@
 
 </head>
 
-<body class="min-h-screen flex flex-col bg-white dark:bg-gray-900 text-slate-900 dark:text-white dark:text-slate-300">
+<body class="min-h-screen flex flex-col bg-white dark:bg-gray-700 text-slate-700 dark:text-white dark:text-slate-300">
