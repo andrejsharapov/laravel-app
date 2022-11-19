@@ -1,0 +1,11 @@
+github:
+  - .github/**/*
+  
+documentation:
+  - README.md
+  
+dependencies:
+  - composer.json
+  - composer.lock
+  - package-lock.json
+  - package.json
