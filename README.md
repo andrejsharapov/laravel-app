@@ -2,8 +2,10 @@
 
 Backend Learning
 
-![php -v](https://img.shields.io/badge/php_7.4-7377ad)
-![laravel -v](https://img.shields.io/badge/laravel-8-df5b4b)
+[![php -v](https://img.shields.io/badge/php-7.4-7377ad)](https://www.php.net/manual/en/langref.php)
+[![laravel -v](https://img.shields.io/badge/laravel-8-df5b4b)](https://laravel.com/docs/8.x)
+[![blade docs](https://img.shields.io/badge/blade-docs-e31c1c)](https://laravel.com/docs/8.x/blade)
+[![vscode github](https://img.shields.io/badge/github-dev-000000?logo=github)](https://github.dev/andrejsharapov/laravel-app)
 
 ## Table of Contents
 
