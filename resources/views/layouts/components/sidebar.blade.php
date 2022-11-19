@@ -9,9 +9,9 @@ $menuItems = require __DIR__ . '../../../../database_/sidebar.php';
 >
   {{-- title/logo --}}
   <div class="p-2.5 flex items-center">
-      <span class="text-white text-4xl top-4 left-4 cursor-pointer ">
+      <a class="text-white text-4xl top-4 left-4 cursor-pointer" href="/modules" title="Modules">
         <i class="bi bi-menu-button px-2 bg-red-600 rounded-md"></i>
-      </span>
+      </a>
     <span class="ml-4 font-bold text-2xl uppercase">
       {{ config('app_config.app.app_name') }}
       </span>
