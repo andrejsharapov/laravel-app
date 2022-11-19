@@ -2,7 +2,7 @@
 
 return [
   [
-    'label' => config('app_config.app.app_name'),
+    'label' => 'Home',
     'path' => '/',
     'icon' => 'bi bi-house-door',
     'blank' => false,
