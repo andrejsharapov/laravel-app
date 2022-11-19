@@ -106,6 +106,8 @@ sftp.*
 /storage/*.key
 /vendor
 .phpunit.result.cache
+
+# Vagrant ignored files
 Homestead.json
 Homestead.yaml
 
