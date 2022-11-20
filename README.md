@@ -11,12 +11,28 @@ Backend Learning
 
 - [Laravel App](#laravel-app)
   - [Table of Contents](#table-of-contents)
+  - [Cloning project](#cloning-project)
   - [List of topics](#list-of-topics)
   - [Commit messages](#commit-messages)
     - [Examples](#examples)
   - [Comments](#comments)
   - [Software](#software)
   - [Command helper](#command-helper)
+
+## Cloning project
+
+```bash
+$ git clone https://github.com/andrejsharapov/laravel-app.git
+$ cd laravel-app
+$ composer install
+$ cp .env.example .env
+$ php artisan key:generate
+# php artisan migrate
+# php artisan db:seed
+$ php artisan serve
+```
+
+Go to link `localhost:8000` or `127.0.0.1:8000`
 
 ## List of topics
 
@@ -48,7 +64,7 @@ Messages must be matched by the following regex:
   <summary>Explanation</summary>
 
 |          On/Off          | Message   | Description                                                   |
-| :----------------------: | --------- | :------------------------------------------------------------ |
+|:------------------------:|-----------|:--------------------------------------------------------------|
 | <ul><li>- [ ] </li></ul> | build     | Changes that affect the build system or external dependencies |
 | <ul><li>- [x] </li></ul> | chore     | Chore development                                             |
 | <ul><li>- [x] </li></ul> | ci        | Changes to our CI configuration files and scripts             |
