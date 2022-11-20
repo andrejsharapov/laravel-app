@@ -17,9 +17,6 @@ Backend Learning
   - [Comments](#comments)
   - [Software](#software)
   - [Command helper](#command-helper)
-    - [Create controller](#create-controller)
-    - [Create model + migration](#create-model--migration)
-    - [Create seed](#create-seed)
 
 ## List of topics
 
@@ -51,7 +48,7 @@ Messages must be matched by the following regex:
   <summary>Explanation</summary>
 
 |          On/Off          | Message   | Description                                                   |
-|:------------------------:|-----------|:--------------------------------------------------------------|
+| :----------------------: | --------- | :------------------------------------------------------------ |
 | <ul><li>- [ ] </li></ul> | build     | Changes that affect the build system or external dependencies |
 | <ul><li>- [x] </li></ul> | chore     | Chore development                                             |
 | <ul><li>- [x] </li></ul> | ci        | Changes to our CI configuration files and scripts             |
