@@ -1,11 +1,16 @@
 # What is the purpose of this pull request?
 
-Please check the appropriate options.
+Please `comment` options that are not relevant.
 
 - [ ] New feature (non-breaking change which adds functionality)
 - [ ] Bug fix (non-breaking change which fixes an issue)
 - [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)
 - [ ] This change requires a documentation update
+
+<!--
+Options that are not relevant here:
+
+-->
 
 ## Description
 
