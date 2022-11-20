@@ -66,7 +66,7 @@ return [
     ],
   ], [
     'label' => 'GitHub',
-    'path' => config('app_config.links.tailwindcss'),
+    'path' => config('app_config.links.github'),
     'blank' => true,
   ],
 ];
