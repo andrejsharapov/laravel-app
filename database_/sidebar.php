@@ -10,7 +10,6 @@ return [
     'label' => 'Modules',
     'path' => [
       [
-        'id' => '11',
         'label' => '11. Старт в PHP',
         'path' => '?utm=11',
         'icon' => '',
@@ -18,7 +17,6 @@ return [
         'caption' => '',
         'content' => '',
       ], [
-        'id' => '12',
         'label' => '12. Типы данных',
         'path' => '?utm=12',
         'icon' => 'bi bi-wind',
@@ -26,7 +24,6 @@ return [
         'caption' => '',
         'content' => '/path/to/code/example',
       ], [
-        'id' => '13',
         'label' => '13. Основные алгоритмические конструкции',
         'path' => '?utm=13',
         'icon' => '',
@@ -34,7 +31,6 @@ return [
         'caption' => '',
         'content' => '',
       ], [
-        'id' => '14',
         'label' => '14. Сессии и Cookie',
         'path' => '?utm=14',
         'icon' => '',
@@ -42,7 +38,6 @@ return [
         'caption' => '',
         'content' => '',
 //         ], [
-//        'id' => '0',
 //        'label' => '',
 //        'path' => '#',
 //        'icon' => '',
