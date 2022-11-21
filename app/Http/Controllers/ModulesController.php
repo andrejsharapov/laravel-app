@@ -23,15 +23,15 @@ class ModulesController extends Controller
    */
   public function getContent()
   {
-    $id = null;
-
-    if (isset($_GET['utm'])) {
-      $id = $_GET['utm'];
+    if (isset($_GET['module'])) {
+      $module = $_GET['module'];
+    } else {
+      $module = null;
     }
 
     $data = $this->getModuleInfo();
-    $data = array_filter($data, function ($val) use ($id) {
-      return ($val["id"] == $id);
+    $data = array_filter($data, function ($val) use ($module) {
+      return ($val["module"] == $module);
     });
 
     $data = Arr::get(array_values($data), '0');
