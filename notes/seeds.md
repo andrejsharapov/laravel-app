@@ -14,7 +14,7 @@ $ php artisan make:seeder NameSeeder
 $ php artisan make:seeder ModuleSeeder
 ```
 
-[Result](../database/seeds/ModuleSeeder.php)
+[Result](../database/seeders/ModuleSeeder.php)
 
 
 ## Run seed
