@@ -10,3 +10,10 @@ $ php artisan make:model NameModel -m
 $ php artisan migrate
 ```
 
+## Examples
+
+```bash
+$ php artisan make:model Module -m
+```
+
+[Result](../app/Models/Module.php)
