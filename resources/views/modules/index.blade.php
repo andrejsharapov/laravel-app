@@ -1,6 +1,14 @@
 @extends('layouts.modules.index')
 
-@section('meta.title', $title)
+@php
+  if (!empty($_GET['module'])) {
+      $module = 'Модуль ' . $_GET['module'] . '. ';
+    } else {
+      $module = null;
+    }
+@endphp
+
+@section('meta.title', $module . $title)
 
 @section('styles')
   <!-- Some styles -->
@@ -12,12 +20,12 @@
 @endsection
 
 @section('module')
-  @section('title', $title)
-  @section('caption', $caption)
+@section('title', $title)
+@section('caption', $module . ' ' . $caption)
 
-  <div>
-    {{ $content  }}
-  </div>
+<div>
+  {{ $content }}
+</div>
 @endsection
 
 @section('scripts')
