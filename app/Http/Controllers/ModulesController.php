@@ -41,8 +41,11 @@ class ModulesController extends Controller
     // display on the page
     $title = Arr::get($data, 'label', 'Модули');
     $caption = Arr::get($data, 'caption', 'Модули и задачи, с которыми возникли сложности или требуется уделить особое внимание.');
-//    $content = Arr::get($data, 'content', '');
-    $content = Storage::disk('modules')->get($module . '.php');
+    $content = Arr::get($data, 'content', '');
+
+    if ($module) {
+      $content = Storage::disk('modules')->get($module . '.php');
+    }
 
     return view('modules/index', compact('title', 'caption', 'content'));
   }
