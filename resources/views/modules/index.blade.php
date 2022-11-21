@@ -24,7 +24,7 @@
 @section('caption', $module . ' ' . $caption)
 
 <div>
-  {{ $content }}
+  {!! $content !!}
 </div>
 @endsection
 
