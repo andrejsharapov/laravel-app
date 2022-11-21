@@ -1,6 +1,31 @@
 <?php
 
-$modules = require 'modules.php';
+use App\Models\Module;
+
+$data = Module::all();
+$data = collect($data)->all();
+
+/**
+ * @param $val
+ * @return array
+ */
+function listModules($val): array
+{
+  return [
+    'module' => $val['module'],
+    'label' => $val['label'],
+    'path' => $val['path'],
+    'icon' => $val['icon'],
+    'blank' => $val['blank'],
+    'caption' => $val['caption'],
+  ];
+}
+
+$modules = array_map('listModules', $data);
+
+if (!count($data)) {
+  $modules = require 'modules.php';
+}
 
 return [
   [

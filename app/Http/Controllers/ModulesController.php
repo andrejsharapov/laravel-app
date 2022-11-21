@@ -9,14 +9,11 @@ use Illuminate\Support\Facades\Storage;
 class ModulesController extends Controller
 {
   /**
-   * @return array|\ArrayAccess|mixed
+   * @return array
    */
-  public function getModuleInfo()
+  public function getModuleInfo(): array
   {
-    $sidebar = require __DIR__ . '/../../../database_/sidebar.php';
-    $data = Arr::get($sidebar, '1.path');
-
-    return $data;
+    return (new SidebarController)->getData();
   }
 
   /**
@@ -25,11 +22,7 @@ class ModulesController extends Controller
    */
   public function getContent()
   {
-    if (isset($_GET['module'])) {
-      $module = $_GET['module'];
-    } else {
-      $module = null;
-    }
+    $module = $_GET['module'] ?? null;
 
     $data = $this->getModuleInfo();
     $data = array_filter($data, function ($val) use ($module) {
