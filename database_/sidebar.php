@@ -16,7 +16,6 @@ return [
         'icon' => '',
         'blank' => false,
         'caption' => 'This module caption',
-        'content' => '',
       ], [
         'module' => 12,
         'label' => 'Типы данных',
@@ -24,7 +23,6 @@ return [
         'icon' => 'bi bi-wind',
         'blank' => false,
         'caption' => '',
-        'content' => '/resources/views/modules/test.php',
       ], [
         'module' => 13,
         'label' => 'Основные алгоритмические конструкции',
@@ -32,7 +30,6 @@ return [
         'icon' => '',
         'blank' => false,
         'caption' => '',
-        'content' => '',
       ], [
         'module' => 14,
         'label' => 'Сессии и Cookie',
@@ -40,7 +37,6 @@ return [
         'icon' => '',
         'blank' => false,
         'caption' => '',
-        'content' => '',
 //         ], [
 //        'id' => '1',
 //        'label' => '',
@@ -48,7 +44,6 @@ return [
 //        'icon' => '',
 //        'blank' => true,
 //        'caption' => '',
-//        'content' => '',
       ],
     ],
     'icon' => 'bi bi-list-nested',
