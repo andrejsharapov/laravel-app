@@ -7,7 +7,7 @@ return [
     'path' => '?module=11',
     'icon' => '',
     'blank' => false,
-    'caption' => 'This module caption',
+    'caption' => '',
   ], [
     'module' => 12,
     'label' => 'Типы данных',
