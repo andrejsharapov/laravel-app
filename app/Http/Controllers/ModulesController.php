@@ -22,13 +22,14 @@ class ModulesController extends Controller
    */
   public function getContent()
   {
+    // get `?module` path
     $module = $_GET['module'] ?? null;
 
+    // filter data
     $data = $this->getModuleInfo();
     $data = array_filter($data, function ($val) use ($module) {
       return ($val["module"] == $module);
     });
-
     $data = Arr::get(array_values($data), '0');
 
     // display on the page
@@ -36,6 +37,7 @@ class ModulesController extends Controller
     $caption = Arr::get($data, 'caption', 'Модули и задачи, с которыми возникли сложности или требуется уделить особое внимание.');
     $content = Arr::get($data, 'content', '');
 
+    // select a disc to watch
     if ($module) {
       $content = Storage::disk('modules')->get($module . '.php');
     }
