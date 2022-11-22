@@ -4,7 +4,7 @@ namespace App\Models;
 
 class Model_Portfolio extends Model
 {
-  public function getData()
+  public function getData(): array
   {
     return array(
       array(

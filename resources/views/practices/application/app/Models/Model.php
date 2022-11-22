@@ -4,7 +4,7 @@ namespace App\Models;
 
 class Model
 {
-  public $string;
+  public string $string;
 
   public function __construct()
   {
