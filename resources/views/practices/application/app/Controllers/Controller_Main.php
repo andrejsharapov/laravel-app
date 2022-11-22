@@ -16,7 +16,9 @@ class Controller_Main extends Controller
     ];
   }
 
-
+  /**
+   * @return void
+   */
   function action_index()
   {
     $links = $this->appLinks();
