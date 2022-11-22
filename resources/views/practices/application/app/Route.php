@@ -35,7 +35,7 @@ class Route
     if (file_exists($controller_path)) {
       include "app/Controllers/" . $controller_file;
     } else {
-      Route::ErrorPage404();
+      (new Route)->ErrorPage404();
     }
 
     $full_class_name = sprintf('\App\Controllers\%s', $controller_name);
@@ -48,7 +48,7 @@ class Route
       // вызываем действие контроллера
       $controller->$action();
     } else {
-      Route::ErrorPage404();
+      (new Route)->ErrorPage404();
     }
   }
 
