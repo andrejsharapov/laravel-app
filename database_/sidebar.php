@@ -23,8 +23,9 @@ function listModules($val): array
 
 $modules = array_map('listModules', $data);
 
+// if there is no table in the database, use other static data
 if (!count($data)) {
-  $modules = require 'modules.php';
+  $modules = require __DIR__ . '/../database_/modules.php';
 }
 
 return [
