@@ -1,3 +1,8 @@
+<!--
+PostgreSQL https://www.postgresql.org/download/
+DBeaver    https://dbeaver.io/download/
+-->
+
 <pre><code class="language-sql">
 --17.3.1
 CREATE TABLE clients (
