@@ -14,7 +14,7 @@ $headerItems = [
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>App for module 24.5</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Open+Sans&display=swap" rel="stylesheet">
     <link href="/public/css/app.css" rel="stylesheet">
@@ -28,7 +28,7 @@ $headerItems = [
     }
 </style>
 
-<header class="px-4 bg-gray-600 text-white shadow-md">
+<header class="px-4 bg-red-600 text-white shadow-md">
     <div class="container mx-auto flex justify-between items-center">
         <div class="text-2xl grow">
             Create app for module 24.5
@@ -40,7 +40,7 @@ $headerItems = [
         $l_name = $link['name'];
         $l_path = $link['path'];
 
-        echo "<li><a class='bg-gray-600 hover:bg-gray-800 text-white font-bold py-2 px-4 rounded' href='$l_path' title='$l_name'>$l_name</a></li>";
+        echo "<li><a class='bg-red-600 hover:bg-red-800 text-white font-bold py-2 px-4 rounded' href='$l_path' title='$l_name'>$l_name</a></li>";
       }
       echo '</ul>';
       ?>
@@ -107,7 +107,7 @@ $headerItems = [
         </div>
     </div>
 
-    <div class="text-center p-4 text-white bg-gray-600">
+    <div class="text-center p-4 text-white bg-red-600">
         © 2022
     </div>
 </footer>
