@@ -4,6 +4,9 @@ namespace App\Models;
 
 class Model_About extends Model
 {
+  /**
+   * @return string[]
+   */
   public function getData(): array
   {
     return [

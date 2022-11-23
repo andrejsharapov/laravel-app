@@ -53,6 +53,9 @@ class Route
     }
   }
 
+  /**
+   * @return void
+   */
   function ErrorPage404()
   {
     $host = 'http://' . $_SERVER['HTTP_HOST'] . '/';
