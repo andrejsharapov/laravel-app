@@ -4,12 +4,12 @@ namespace App;
 
 class View
 {
-//  $content_view – виды, отображающие контент страниц;
+//  $view_content – виды, отображающие контент страниц;
 //  $layout — общий для всех страниц шаблон;
 //  $data — массив, содержащий элементы контента страницы. Обычно заполняется в модели.
 
-  function generate($content_view, $layout, $data = null)
+  function generate($view_content, $layout, $data = null)
   {
-    include 'views/' . $layout;
+    include __DIR__ . '/../views/' . $layout;
   }
 }

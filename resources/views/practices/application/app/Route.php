@@ -45,6 +45,7 @@ class Route
     $action = $action_name;
 
     if (method_exists($controller, $action)) {
+
       // вызываем действие контроллера
       $controller->$action();
     } else {

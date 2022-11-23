@@ -2,12 +2,21 @@
 
 namespace App\Controllers;
 
+use App\View;
 use App\Models\Model_About;
 
 class Controller_About extends Controller
 {
-  function action_about()
+  public function __construct()
   {
-    $this->view->generate('views/about.php', 'layout.php');
+    $this->view = new View();
+    $this->model = new Model_About();
+  }
+
+  function action_index()
+  {
+    $data = $this->model->getData();
+
+    $this->view->generate('views/view_about.php', 'layout.php', $data);
   }
 }

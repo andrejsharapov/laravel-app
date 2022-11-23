@@ -7,9 +7,9 @@ class Model_About extends Model
   public function getData(): array
   {
     return [
-      'author' => 'Me',
-      'description' => 'Description',
-      'age' => 'Age',
+      'author' => 'Andrej Sharapov',
+      'position' => 'I\'m Web Designer, Frontend Developer',
+      'study' => 'i study PHP and Backend',
     ];
   }
 }
