@@ -84,47 +84,5 @@
       </div>
     @endif
   @endforeach
-
-  <!--
-  <a
-    href="/"
-    title=""
-    class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-gray-300"
-  >
-
-    <span class="text-[15px] ml-4 font-bold">Home</span>
-  </a>
-  <div class="my-1 h-[1px]"></div>
-
-  {{-- dropdown --}}
-  <div
-    class="p-2.5 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-gray-300"
-    onclick="dropdown()"
-  >
-    <i class="bi bi-chat-left-text-fill"></i>
-    <div class="flex justify-between w-full items-center">
-      <span class="text-[15px] ml-4 font-bold">Modules</span>
-      <span class="text-sm rotate-180" id="arrow">
-            <i class="bi bi-chevron-down"></i>
-          </span>
-    </div>
-  </div>
-
-  {{-- dropdown submenu --}}
-  <div
-    class="text-left text-sm mt-2 ml-auto w-4/5 font-bold"
-    id="submenu"
-  >
-    <a href="#" title="" class="block p-2 hover:bg-gray-300 rounded-md mt-1">
-      1
-    </a>
-    <a href="#" title="" class="block p-2 hover:bg-gray-300 rounded-md mt-1">
-      2
-    </a>
-    <a href="#" title="" class="block p-2 hover:bg-gray-300 rounded-md mt-1">
-      3
-    </a>
-  </div>
-  -->
 </div>
 

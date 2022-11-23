@@ -29,10 +29,27 @@ $ cp .env.example .env
 $ php artisan key:generate
 # php artisan migrate
 # php artisan db:seed
-$ php artisan serve
 ```
 
-Go to link `localhost:8000` or `127.0.0.1:8000`
+launch
+
+```bash
+$ php artisan serve
+- Go to link `localhost:8000` or `127.0.0.1:8000`
+```
+
+or (If you are using [`Open Server`](https://ospanel.io/))
+
+```bash
+- Go to `Open Server Panel`
+- Settings
+- Domains
+- Write name: `laravel-app`
+- Select folder `\laravel-app\public`
+- Save
+- Go to link `laravel-app/`
+```
+
 
 ## List of topics
 
@@ -50,9 +67,7 @@ Go to link `localhost:8000` or `127.0.0.1:8000`
 
 ## Commit messages
 
-> This is adapted
-> from [Angular's commit convention](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-angular)
-> .
+> This is adapted from [Angular's commit convention](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-angular).
 
 Messages must be matched by the following regex:
 
