@@ -2,10 +2,10 @@
 
 use App\Route;
 
-require_once __DIR__ . '\app\Models\Model.php';
-require_once __DIR__ . '\app\Controllers\Controller.php';
-require_once __DIR__ . '\app\Route.php';
-require_once __DIR__ . '\app\View.php';
+require_once 'app/Model.php';
+require_once 'app/View.php';
+require_once 'app/Controller.php';
+require_once 'app/Route.php';
 
 Route::start();
 
