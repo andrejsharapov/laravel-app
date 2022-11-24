@@ -2,6 +2,7 @@
 
 App for Module 24.5
 
+<!--
 ## How to use
 
 - Go to `Open Server Panel`
@@ -11,6 +12,7 @@ App for Module 24.5
 - Select folder `\laravel-app\resources\views\practices\application`
 - Save
 - Go to `application/`
+-->
 
 ## Pages
 
