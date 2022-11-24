@@ -39,11 +39,6 @@ return [
     'path' => $modules,
     'icon' => 'bi bi-list-nested',
   ], [
-    'label' => 'Tailwind CSS',
-    'path' => config('app_config.links.tailwindcss'),
-    'icon' => 'bi bi-wind',
-    'blank' => true,
-  ], [
     'label' => 'PHP docs',
     'path' => config('app_config.links.php'),
     'icon' => 'bi bi-filetype-php',
