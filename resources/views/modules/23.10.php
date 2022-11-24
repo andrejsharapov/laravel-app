@@ -1,5 +1,5 @@
+<pre><code class="language-sql">
 <?php
-
 /**
  * Модуль 23.10. Практическое задание
  *
@@ -32,11 +32,11 @@ interface CarsMove
 
 abstract class Cars implements CarsMove
 {
-  public $ridingForward = true; // движение вперед
-  public $ridingBack = true; // движение назад
+  public bool $ridingForward = true; // движение вперед
+  public bool $ridingBack = true; // движение назад
   protected $fuel; // заправка
   protected $shoots; // заряды для танка
-  public $wipers = true; // дворники
+  public bool $wipers = true; // дворники
 
   //  function __construct($ridingForward = true, $ridingBack = true, string $fuel)
   //  {
@@ -98,9 +98,9 @@ abstract class Cars implements CarsMove
 class Auto extends Cars
 {
   protected $fuel = 'Azot';
-  protected $signals = true;
+  protected bool $signals = true;
 
-  public function move()
+  public function move(): string
   {
     $this->riding();
 
@@ -118,9 +118,7 @@ class Auto extends Cars
   /**
    * авто использует дворики
    *
-   * @param boolean $wipers
-   *
-   * @return string | null
+   * @return string|null
    */
   public function useWipers()
   {
@@ -145,7 +143,7 @@ echo '<br />';
  */
 class Tank extends Cars
 {
-  public $ridingBack = false;
+  public bool $ridingBack = false;
   protected $shoots = 2;
 
   public function shoot()
@@ -182,15 +180,12 @@ class Bulldozer extends Cars
     echo 'я могу размахивать ковшом ';
   }
 
-
   /**
    * бульдозер использует дворики
    *
-   * @param boolean $wipers
-   *
-   * @return string | null
+   * @return string|null
    */
-  public function useWipers()
+  public function useWipers(): ?string
   {
     if ($this->wipers) {
       return 'и я использую дворники ';
@@ -212,3 +207,6 @@ echo '<br />';
 // я могу ездить вперед и назад, у меня под капотом Azot и я использую дворники
 // я могу ездить только вперед, у меня есть 2 заряда
 // я могу ездить вперед и назад, я могу размахивать ковшом и заправляться G-Drive 95 и я использую дворники
+
+?>
+</code></pre>
