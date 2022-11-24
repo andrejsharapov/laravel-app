@@ -2,6 +2,10 @@
 
 return [
   [
+    'label' => 'Pages',
+    'path' => '/page',
+    'blank' => false,
+  ], [
     'label' => 'Modules',
     'path' => '/modules',
     'blank' => false,
@@ -9,38 +13,21 @@ return [
     'label' => 'Practices',
     'path' => [
       [
-//        'label' => 'Oop (23.10)',
-//        'path' => '#',
-//        'blank' => true,
-//      ], [
+        'label' => 'App (MVC 24.5)',
+        'path' => '/resource/views/practices/application/',
+        'blank' => true,
+      ], [
+        'label' => 'OOP 23.10',
+        'path' => '/modules?module=23.10',
+        'blank' => true,
+      ], [
         'label' => 'SPA (14.8)',
-        'path' => '#',
+        'path' => '/practices/spa',
         'blank' => true,
         // ], [
         //   'label' => 'test',
         //   'path' => '#',
         //   'blank' => true,
-      ]
-    ]
-  ], [
-    'label' => 'Layouts',
-    'path' => [
-      [
-        'label' => 'Home page',
-        'path' => '/',
-        'blank' => true,
-      ], [
-        'label' => 'Pages',
-        'path' => '/page',
-        'blank' => true,
-      ], [
-        'label' => 'Modules',
-        'path' => '/modules',
-        'blank' => true,
-//          ], [
-//        'label' => 'test',
-//        'path' => '#',
-//        'blank' => true,
       ]
     ]
   ], [
