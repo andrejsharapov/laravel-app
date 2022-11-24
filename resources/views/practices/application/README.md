@@ -11,3 +11,15 @@ App for Module 24.5
 - Select folder `\laravel-app\resources\views\practices\application`
 - Save
 - Go to `application/`
+
+## Pages
+
+- php pages:
+  - ?url=main
+  - ?url=about
+  - ?url=portfolio
+
+- static pages:
+  - services.html
+  - contact.html
+  
