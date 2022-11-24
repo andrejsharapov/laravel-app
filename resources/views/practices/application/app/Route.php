@@ -1,5 +1,7 @@
 <?php
 
+namespace App;
+
 class Route
 {
  public static function start()
@@ -36,8 +38,10 @@ class Route
    (new Route)->ErrorPage404();
   }
 
+  $full_class_name = sprintf('\App\Controllers\%s', $controller_name);
+  
   // создаем контроллер
-  $controller = new $controller_name;
+  $controller = new $full_class_name;
   $action = $action_name;
 
   if (method_exists($controller, $action)) {

@@ -1,5 +1,9 @@
 <?php
 
+namespace App\Models;
+
+use App\Model;
+
 class ModelMain extends Model
 {
   public string $page = 'I\'m main page';
@@ -9,7 +13,7 @@ class ModelMain extends Model
   /**
    * @return array
    */
-  public function get_data(): array
+  public function getData(): array
   {
     return [
       'title' => $this->page,

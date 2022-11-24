@@ -1,11 +1,15 @@
 <?php
 
+namespace App\Models;
+
+use App\Model;
+
 class ModelAbout extends Model
 {
   /**
    * @return array
    */
-  public function get_data(): array
+  public function getData(): array
   {
     return [
       'author' => 'Andrej Sharapov',

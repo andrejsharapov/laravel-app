@@ -1,5 +1,11 @@
 <?php
 
+namespace App\Controllers;
+
+use App\Controller;
+use App\View;
+use App\Models\ModelAbout;
+
 class ControllerAbout extends Controller
 {
   public function __construct()
@@ -10,7 +16,7 @@ class ControllerAbout extends Controller
 
   function action_index()
   {
-    $data = $this->model->get_data();
+    $data = $this->model->getData();
 
     $this->view->generate('view_about.php', 'layout.php', $data);
   }

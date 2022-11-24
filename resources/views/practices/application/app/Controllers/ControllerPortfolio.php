@@ -1,5 +1,11 @@
 <?php
 
+namespace App\Controllers;
+
+use App\Controller;
+use App\View;
+use App\Models\ModelPortfolio;
+
 class ControllerPortfolio extends Controller
 {
   public function __construct()
@@ -10,7 +16,7 @@ class ControllerPortfolio extends Controller
 
   function action_index()
   {
-    $data = $this->model->get_data();
+    $data = $this->model->getData();
 
     $this->view->generate('view_portfolio.php', 'layout.php', $data);
   }

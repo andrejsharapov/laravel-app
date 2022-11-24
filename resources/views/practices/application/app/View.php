@@ -1,5 +1,7 @@
 <?php
 
+namespace App;
+
 class View
 {
  //  $view_content – виды, отображающие контент страниц;
