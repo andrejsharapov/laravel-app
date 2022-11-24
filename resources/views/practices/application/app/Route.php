@@ -9,12 +9,18 @@ class Route
   // контроллер и действие по умолчанию
   $controller_name = 'Main';
   $action_name = 'index';
-  $routes = $_GET['url'];
+  $routes = $_GET;
+
+  if (count($_GET)) {
+   $routes = $_GET['url'];
+  }
 
   // получаем имя контроллера
   if (!empty($routes)) {
    $controller_name = $routes;
   }
+
+  $controller_name = ucfirst($controller_name);
 
   // добавляем префиксы
   $model_name = 'Model' . $controller_name;
@@ -29,7 +35,7 @@ class Route
    include "app/Models/" . $model_file;
   }
   // подцепляем файл с классом контроллера
-  $controller_file = strtolower($controller_name) . '.php';
+  $controller_file = $controller_name . '.php';
   $controller_path = "app/Controllers/" . $controller_file;
 
   if (file_exists($controller_path)) {
@@ -38,8 +44,8 @@ class Route
    (new Route)->ErrorPage404();
   }
 
-  $full_class_name = sprintf('\App\Controllers\%s', $controller_name);
-  
+  $full_class_name = sprintf('App\Controllers\%s', $controller_name);
+
   // создаем контроллер
   $controller = new $full_class_name;
   $action = $action_name;
