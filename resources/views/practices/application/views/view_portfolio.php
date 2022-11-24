@@ -7,6 +7,7 @@
   corporis pariatur qui sapiente vel voluptatem voluptates? Debitis distinctio facilis nemo officiis quas quibusdam
   vel.
 </p>
+
 <section class="overflow-hidden text-gray-700 ">
   <div class="container px-5 py-2 mx-auto lg:pt-12 lg:px-32">
     <div class="w-full w-4/5 mx-auto grid grid-cols-3">
