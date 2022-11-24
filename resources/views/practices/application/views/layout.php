@@ -1,8 +1,10 @@
 <?php
 $headerItems = [
-  ['name' => 'main', 'path' => '?url=main'],
-  ['name' => 'about', 'path' => '?url=about'],
-  ['name' => 'portfolio', 'path' => '?url=portfolio'],
+  ['name' => 'main', 'path' => '/?url=main'],
+  ['name' => 'about', 'path' => '/?url=about'],
+  ['name' => 'portfolio', 'path' => '/?url=portfolio'],
+  ['name' => 'services', 'path' => '/services.html'],
+  ['name' => 'contact', 'path' => '/contact.html'],
 ];
 
 function setColor(): string
