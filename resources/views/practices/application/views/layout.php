@@ -69,7 +69,7 @@ function setColor(): string
 </header>
 
 <div class="container mx-auto py-4">
-  <?php include $view_content ?>
+  <?php include $view_content; ?>
 </div>
 
 <footer class="bg-gray-100 text-center lg:text-left">
