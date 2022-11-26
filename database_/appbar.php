@@ -13,10 +13,6 @@ return [
     'label' => 'Practices',
     'path' => [
       [
-        'label' => 'App (MVC 24.5)',
-        'path' => '/resource/views/practices/application/',
-        'blank' => true,
-      ], [
         'label' => 'OOP 23.10',
         'path' => '/modules?module=23.10',
         'blank' => true,

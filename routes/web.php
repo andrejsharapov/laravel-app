@@ -15,7 +15,3 @@ Route::get('/page', 'PagesController@getContent');
 Route::get('practices/spa', function () {
   return view('practices/spa/login');
 });
-Route::get('practices/application', function () {
-  return view('practices/application/index');
-});
-
