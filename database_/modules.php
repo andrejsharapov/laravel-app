@@ -2,17 +2,38 @@
 
 return [
   [
-    'module' => 11,
-    'label' => 'Старт в PHP',
-    'path' => '?module=11',
+    'module' => 11.5,
+    'label' => 'Основы языка PHP',
+    'path' => '?module=11.5',
     'icon' => '',
     'blank' => false,
     'caption' => '',
   ], [
-    'module' => 12,
-    'label' => 'Типы данных',
-    'path' => '?module=12',
-    'icon' => 'bi bi-wind',
+    'module' => 11.6,
+    'label' => 'Типы данных. Операции над числами и строками',
+    'path' => '?module=11.6',
+    'icon' => '',
+    'blank' => false,
+    'caption' => '',
+  ], [
+    'module' => 12.2,
+    'label' => 'Арифметика',
+    'path' => '?module=12.2',
+    'icon' => '',
+    'blank' => false,
+    'caption' => '',
+  ], [
+    'module' => 12.4,
+    'label' => 'Строки',
+    'path' => '?module=12.4',
+    'icon' => '',
+    'blank' => false,
+    'caption' => '',
+  ], [
+    'module' => 12.5,
+    'label' => 'Массивы',
+    'path' => '?module=12.5',
+    'icon' => '',
     'blank' => false,
     'caption' => '',
   ], [

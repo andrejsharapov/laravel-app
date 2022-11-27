@@ -17,13 +17,21 @@ return [
         'path' => '/modules?module=23.10',
         'blank' => true,
       ], [
-        'label' => 'SPA (14.8)',
+        'label' => 'SPA app (14.8)',
         'path' => '/practices/spa',
         'blank' => true,
-        // ], [
-        //   'label' => 'test',
-        //   'path' => '#',
-        //   'blank' => true,
+//         ], [
+//           'label' => 'test',
+//           'path' => '#',
+//           'blank' => true,
+         ], [
+           'label' => 'Типы данных (12.6)',
+           'path' => '/modules?module=12.6',
+           'blank' => true,
+      ], [
+        'label' => 'Основы PHP (11.7)',
+        'path' => '/modules?module=11.7',
+        'blank' => true,
       ]
     ]
   ], [
@@ -33,10 +41,6 @@ return [
         'label' => 'Tailwind CSS',
         'path' => config('app_config.links.tailwindcss'),
         'blank' => true,
-        // ], [
-        //   'label' => '',
-        //   'path' => '#',
-        //   'blank' => true,
       ], [
         'label' => 'PHP docs',
         'path' => config('app_config.links.php'),
