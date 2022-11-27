@@ -1,8 +1,4 @@
 <?php
-
-/**
- * Logout
- */
 session_start();
 unset($_COOKIE['login']);
 

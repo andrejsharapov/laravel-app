@@ -1,7 +1,7 @@
 <?php
 session_start([
-  'gc_maxlifetime' => 172800,
-  'cookie_lifetime' => 172800,
+//  'gc_maxlifetime' => 172800,
+//  'cookie_lifetime' => 172800,
 ]);
 ?>
 
@@ -15,10 +15,10 @@ session_start([
   <title>SPA &mdash; t14.8</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Open+Sans&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Comfortaa&family=Courgette&display=swap"
-        rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito&family=Comfortaa&family=Courgette&display=swap"
+    rel="stylesheet"
+  >
   <style>
     body {
       font-family: 'Comfortaa', sans-serif;
@@ -95,16 +95,27 @@ if ($_SESSION['login']) {
   if ($count == 2) {
     ?>
     <!-- ANCHOR birthday dialog -->
-    <div id="birthday-dialog" data-modal-placement="center center" tabindex="-1"
-         class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 md:inset-0 h-modal md:h-full">
+    <div
+      id="birthday-dialog"
+      data-modal-placement="center center"
+      tabindex="-1"
+      class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 md:inset-0 h-modal md:h-full"
+    >
       <div class="relative p-4 w-full max-w-md h-full md:h-auto">
         <!-- dialog content -->
         <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-          <button type="button"
-                  class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800 dark:hover:text-white"
-                  data-modal-toggle="birthday-dialog">
-            <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
-                 xmlns="http://www.w3.org/2000/svg">
+          <button
+            type="button"
+            class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800 dark:hover:text-white"
+            data-modal-toggle="birthday-dialog"
+          >
+            <svg
+              aria-hidden="true"
+              class="w-5 h-5"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <path fill-rule="evenodd"
                     d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
                     clip-rule="evenodd"></path>
@@ -117,9 +128,12 @@ if ($_SESSION['login']) {
               Когда у Вас день рождения?
             </h3>
             <form method="POST" action="" class="grid space-y-6">
-              <input
-                class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-green-500"
-                name="birthday" type="text" placeholder="Введите день и месяц, например, 09.09">
+              <label>
+                <input
+                  class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-green-500"
+                  name="birthday" type="text" placeholder="Введите день и месяц, например, 09.09">
+              </label>
+
               <input
                 class="shadow cursor-pointer bg-green-500 hover:bg-green-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
                 data-modal-toggle="birthday-dialog" name="submit" type="submit" value="Отправить">
@@ -140,17 +154,24 @@ if ($_SESSION['login']) {
     <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl px-4 md:px-6 py-2.5">
       <a href="#" class="flex items-center gap-3">
         <h1
-          class="text-3xl font-extrabold dark:text-white tracking-tight sm:text-4.5xl font-display sm:leading-extra-tight">
-          SPA</h1>
+          class="text-3xl font-extrabold dark:text-white tracking-tight sm:text-4.5xl font-display sm:leading-extra-tight"
+        >
+          SPA
+        </h1>
         <div class="text-green-500">
           <svg width="36" height="36" viewBox="0 0 24 24">
-            <path fill="currentColor"
-                  d="M2,22V20C2,20 7,18 12,18C17,18 22,20 22,20V22H2M11.3,9.1C10.1,5.2 4,6.1 4,6.1C4,6.1 4.2,13.9 9.9,12.7C9.5,9.8 8,9 8,9C10.8,9 11,12.4 11,12.4V17C11.3,17 11.7,17 12,17C12.3,17 12.7,17 13,17V12.8C13,12.8 13,8.9 16,7.9C16,7.9 14,10.9 14,12.9C21,13.6 21,4 21,4C21,4 12.1,3 11.3,9.1Z"/>
+            <path
+              fill="currentColor"
+              d="M2,22V20C2,20 7,18 12,18C17,18 22,20 22,20V22H2M11.3,9.1C10.1,5.2 4,6.1 4,6.1C4,6.1 4.2,13.9 9.9,12.7C9.5,9.8 8,9 8,9C10.8,9 11,12.4 11,12.4V17C11.3,17 11.7,17 12,17C12.3,17 12.7,17 13,17V12.8C13,12.8 13,8.9 16,7.9C16,7.9 14,10.9 14,12.9C21,13.6 21,4 21,4C21,4 12.1,3 11.3,9.1Z"
+            />
           </svg>
         </div>
       </a>
       <div class="flex items-center text-sm font-medium">
-        <a href="#" class="flex items-center gap-3 mr-6 text-gray-600 dark:text-white hover:underline">
+        <a
+          href="#"
+          class="flex items-center gap-3 mr-6 text-gray-600 dark:text-white hover:underline"
+        >
           <?php
           if ($login) {
             ?>
@@ -167,10 +188,17 @@ if ($_SESSION['login']) {
           }
           ?>
         </a>
-        <a href="#" class="flex items-center gap-3 mr-6 text-gray-600 dark:text-white hover:underline">
-          <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-            <path fill="currentColor"
-                  d="M17,18A2,2 0 0,1 19,20A2,2 0 0,1 17,22C15.89,22 15,21.1 15,20C15,18.89 15.89,18 17,18M1,2H4.27L5.21,4H20A1,1 0 0,1 21,5C21,5.17 20.95,5.34 20.88,5.5L17.3,11.97C16.96,12.58 16.3,13 15.55,13H8.1L7.2,14.63L7.17,14.75A0.25,0.25 0 0,0 7.42,15H19V17H7C5.89,17 5,16.1 5,15C5,14.65 5.09,14.32 5.24,14.04L6.6,11.59L3,4H1V2M7,18A2,2 0 0,1 9,20A2,2 0 0,1 7,22C5.89,22 5,21.1 5,20C5,18.89 5.89,18 7,18M16,11L18.78,6H6.14L8.5,11H16Z"/>
+        <a
+          href="#"
+          class="flex items-center gap-3 mr-6 text-gray-600 dark:text-white hover:underline"
+        >
+          <svg
+            style="width:24px;height:24px"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="M17,18A2,2 0 0,1 19,20A2,2 0 0,1 17,22C15.89,22 15,21.1 15,20C15,18.89 15.89,18 17,18M1,2H4.27L5.21,4H20A1,1 0 0,1 21,5C21,5.17 20.95,5.34 20.88,5.5L17.3,11.97C16.96,12.58 16.3,13 15.55,13H8.1L7.2,14.63L7.17,14.75A0.25,0.25 0 0,0 7.42,15H19V17H7C5.89,17 5,16.1 5,15C5,14.65 5.09,14.32 5.24,14.04L6.6,11.59L3,4H1V2M7,18A2,2 0 0,1 9,20A2,2 0 0,1 7,22C5.89,22 5,21.1 5,20C5,18.89 5.89,18 7,18M16,11L18.78,6H6.14L8.5,11H16Z"/>
           </svg>
         </a>
         <a href="<?= $login ? 'logout.php' : 'login.php' ?>" class="text-green-600 dark:text-green-500 hover:underline">
