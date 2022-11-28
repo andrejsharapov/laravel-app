@@ -16,10 +16,6 @@ return [
         'label' => 'OOP 23.10',
         'path' => '/modules?module=23.10',
         'blank' => true,
-      ], [
-        'label' => 'SPA app (14.8)',
-        'path' => '/practices/spa',
-        'blank' => true,
 //         ], [
 //           'label' => 'test',
 //           'path' => '#',
