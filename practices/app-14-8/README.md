@@ -8,7 +8,7 @@ App for Module 14.8
 - Settings
 - Domains
 - Write name: `spa`
-- Select folder `\laravel-app\practices/app-14-8`
+- Select folder `\laravel-app\practices\app-14-8`
 - Save
 - Go to `spa/`
 
