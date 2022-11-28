@@ -12,10 +12,7 @@ Route::get('/modules', 'ModulesController@getContent');
 Route::get('/page', 'PagesController@getContent');
 
 // routes for practical works
-Route::get('practices/spa', function () {
-  return view('practices/spa/login');
-});
-Route::get('practices/application', function () {
-  return view('practices/application/index');
-});
-
+//Route::get('practices/spa-application', function () {
+//  return view('practices/spa-application/login');
+//});
+//Route::get('practices/spa-application', 'practices/spa-application/login');

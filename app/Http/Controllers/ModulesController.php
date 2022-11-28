@@ -34,7 +34,7 @@ class ModulesController extends Controller
 
     // display on the page
     $title = Arr::get($data, 'label', 'Модули');
-    $caption = Arr::get($data, 'caption', 'Модули и задачи, с которыми возникли сложности или требуется уделить особое внимание.');
+    $caption = Arr::get($data, 'caption', '');
     $content = Arr::get($data, 'content', '');
 
     // select a disc to watch

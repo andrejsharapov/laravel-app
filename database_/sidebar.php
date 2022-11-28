@@ -2,8 +2,9 @@
 
 use App\Models\Module;
 
-$data = Module::all();
-$data = collect($data)->all();
+//$data = Module::all();
+//$data = collect($data)->all();
+$data = [];
 
 /**
  * @param $val

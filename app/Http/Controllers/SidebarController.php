@@ -12,6 +12,7 @@ class SidebarController extends Controller
   public function getData(): array
   {
     $data = Module::all();
+    $data = [];
 
     // if there is no table in the database, use other static data
     if (!count($data)) {
