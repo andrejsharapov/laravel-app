@@ -20,7 +20,6 @@ App for Module 25.9
 - Save
 - Go to `app-25-9/`
 
-
 ### Use php
 
 ```bash
