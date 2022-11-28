@@ -4,11 +4,19 @@ App for Module 14.8
 
 ## How to use
 
+### With Open Server Panel
+
 - Go to `Open Server Panel`
 - Settings
 - Domains
-- Write name: `spa`
-- Select folder `\laravel-app\practices\app-14-8`
+- Write name: `app-14-8`
+- Select folder `OSPanel\domains\app-14-8`
 - Save
-- Go to `spa/`
+- Go to `app-14-8/`
 
+
+### Use php
+
+```bash
+$ php -S localhost:8080
+```

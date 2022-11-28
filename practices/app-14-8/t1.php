@@ -16,7 +16,7 @@ function getUsersList(): array
 
   foreach ($users as $k => $v) {
     // $new_pass = sha1($new_arr['password']); // broken
-    $new_pass = openssl_digest($v['password'], "sha512", false);
+    $new_pass = openssl_digest($v['password'], "sha512");
     $new_arr[$k] = $new_pass;
   }
 
@@ -51,7 +51,7 @@ function existsUser(string $login): bool
  *
  * @param string $login
  * @param string $password
- * @return bool
+ * @return bool|null
  */
 function checkPassword(string $login, string $password): ?bool
 {
@@ -65,7 +65,7 @@ function checkPassword(string $login, string $password): ?bool
       // проверка, совпадает ли пароль
       if ($password === $pass) {
         setcookie('login', $login, 0, '/');
-        setcookie('password', openssl_digest($pass, "sha512", false), 0, '/');
+        setcookie('password', openssl_digest($pass, "sha512"), 0, '/');
 
         return true;
       } else {
@@ -77,6 +77,8 @@ function checkPassword(string $login, string $password): ?bool
       return existsUser($login);
     }
   }
+
+  return null;
 }
 
 /**

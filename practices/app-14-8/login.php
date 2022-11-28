@@ -107,13 +107,17 @@
       </div>
 
       <form method="POST" action="t1.php" class="w-full mx-auto max-w-md flex flex-col gap-5 mt-5">
-        <input
-          class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-green-500"
-          name="login" type="text" placeholder="Логин">
-        <input
-          class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-green-500"
-          name="password" type="password" placeholder="Пароль">
-        <input
+          <label>
+              <input
+                class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-green-500"
+                name="login" type="text" placeholder="Логин">
+          </label>
+          <label>
+              <input
+              class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-green-500"
+              name="password" type="password" placeholder="Пароль">
+          </label>
+          <input
           class="shadow cursor-pointer bg-green-500 hover:bg-green-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
           name="submit" type="submit" value="Log in">
       </form>
