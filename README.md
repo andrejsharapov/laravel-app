@@ -57,11 +57,11 @@ or (If you are using [`Open Server`](https://ospanel.io/))
 - [x] SQL (MySQL, PostgreSQL, DBeaver)
 - [x] Linux base
 - [x] ООП
-- [ ] MVC (Model-View-Controller)
-- [ ] DB
-- [ ] PHP advanced
-- [ ] Auth
-- [ ] Linux advanced
+- [x] MVC (Model-View-Controller)
+- [x] DB
+- [x] PHP advanced
+- [x] Auth
+- [x] Linux advanced
 - [ ] Docker
 - [ ] Laravel
 
