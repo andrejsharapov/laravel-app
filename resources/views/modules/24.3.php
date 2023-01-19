@@ -1,4 +1,4 @@
-// 24.3 MVC: Модель, Представление и Контроллер | <a href="https://github.com/andrejsharapov/php-app-24-5" title="Итоговый проект" target="_blank">Итоговый проект</a>
+// 24.3 MVC: Модель, Представление и Контроллер
 
 <?php
 $caption = 'MVC: Модель, Представление и Контроллер';
@@ -55,3 +55,26 @@ RewriteRule .* index.php [L]
 </code></pre>
 
 Получить URL адрес текущей страницы можно из переменной $_SERVER['REQUEST_URI'].
+
+<div class="text-2xl mt-4 mb-2">MVC каркас</div>
+
+<pre><code class="language-php">
+application/
+        → controllers/
+        → core/
+        → models/
+        → views/
+        → bootstrap.php
+
+public/
+        → css
+        → js
+        → src
+.htaccess
+index.php
+page1.html
+page2.html
+...
+</code></pre>
+
+<a href="https://github.com/andrejsharapov/php-app-24-5" title="Итоговый проект" target="_blank">Итоговый проект</a>.
