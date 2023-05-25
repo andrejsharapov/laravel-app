@@ -62,8 +62,8 @@ or (If you are using [`Open Server`](https://ospanel.io/))
 - [x] PHP advanced
 - [x] Auth
 - [x] Linux advanced
-- [ ] Docker
-- [ ] Laravel
+- [x] Docker
+- [x] Laravel
 
 ## Commit messages
 
